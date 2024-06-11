@@ -20,17 +20,17 @@ Features:
   1.3) Red: Identified as in incorrect position and to be moved
   1.4) Green: In correct position 
 
-2) Colored representation of step being executed (For Counting Based Algorithm (I am considering bucket sort also here)).
+3) Colored representation of step being executed (For Counting Based Algorithm (I am considering bucket sort also here)).
   2.1) rgb(7, 178, 171) : default
   2.2) lightblue: being counted
   2.3) lightgreen: being copied to other array
   2.4) green: in correct position (for radix it will be green also when the corresponding digits are in correct position)
 
-3) 3 Controls for visualizations
+4) 3 Controls for visualizations
   2.1) Speed of visualization (6 speed levels)
   2.2) Data size ()
   2.3) Generation of new data (Randomly generate new data).
 
-4) Time and Space complexity of algorithm being visualized.
+5) Time and Space complexity of algorithm being visualized.
 
 

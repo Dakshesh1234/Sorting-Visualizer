@@ -1,4 +1,5 @@
 # Sorting_Visualizer
+Just download and run the index file and there you go you can see 10 sorting visuzlizations
 Implemented algorithms:
  1) Bubble sort
  2) Selection sort

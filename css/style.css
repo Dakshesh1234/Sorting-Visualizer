@@ -14,7 +14,6 @@ body {
 nav {
   background-color: #005259;
   color: rgb(255, 255, 255);
-  display: -ms-grid;
   display: grid;
   grid-template-columns: 30% 68%;
   column-gap: 2%;
@@ -22,9 +21,7 @@ nav {
 }
 
 nav .array-inputs {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 60% 40%;
   grid-template-columns: 60% 40%;
   place-content: center;
   padding: 10px 20px;
@@ -55,12 +52,7 @@ nav .array-inputs #a_generate:hover {
 }
 
 nav .header_right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -125,9 +117,7 @@ nav .header_right .algos .butt_unselected:hover {
 
 section {
   background-color: rgb(212, 210, 210);
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 60% 20%;
   grid-template-columns: 20% 60% 20%;
 }
 
@@ -157,8 +147,6 @@ section #Info_Cont1 h3 {
 }
 
 section #array_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 70vh;

@@ -20,6 +20,7 @@ inp_as.addEventListener("input",update_array_size);
 function generate_array()
 {
     cont.innerHTML="";
+    cont.style = "display: flex; flex-direction: row; align-items: flex-end;";
     for(var i=0;i<array_size;i++)
     {
         div_sizes[i]=Math.floor(Math.random() * 0.5*(inp_as.max - inp_as.min) ) + 10;

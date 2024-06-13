@@ -13,19 +13,16 @@ function BucketSort() {
 }
 
 function bucket_sort() {
-    var buckets = new Array(array_size);
+    var buckets = new Array(array_size / 4);
     for (var i = 0; i < array_size; i++) {
         buckets[i] = [];
     }
 
-    for (var i = 0; i < array_size; i++) {
-        var idx_buck = Math.floor((array_size - 1) * div_sizes[i] / inp_as.max);
-        buckets[idx_buck].push(div_sizes[i]);
-        div_update(divs[i], div_sizes[i], "lightgreen");
-    }
 
     for (var i = 0; i < array_size; i++) {
-        insertion_sort(buckets[i]);
+        var idx_buck = Math.floor((array_size / 4) * div_sizes[i] / inp_as.max);
+        buckets[idx_buck].push(div_sizes[i]);
+        div_update(divs[i], div_sizes[i], "lightgreen");
     }
 
     var k = 0;
@@ -35,15 +32,23 @@ function bucket_sort() {
             div_update(divs[k - 1], div_sizes[k - 1], "green");
         }
     }
+
+    var lent = 0;
+    for (var i = 0; i < array_size / 4; i++) {
+        insertion_sort(div_sizes, lent, lent + buckets[i].length);
+        lent = lent + buckets[i].length;
+    }
+
 }
 
-function insertion_sort(bucket) {
-    for (var j = 1; j < bucket.length; j++) {
+function insertion_sort(bucket, start, end) {
+    for (var j = start + 1; j < end; j++) {
         div_update(divs[j], bucket[j], "yellow");
 
         var key = bucket[j];
         var i = j - 1;
-        while (i >= 0 && bucket[i] > key) {
+
+        while (i >= start && bucket[i] > key) {
             div_update(divs[i], bucket[i], "red");
             div_update(divs[i + 1], bucket[i + 1], "red");
 
@@ -55,17 +60,19 @@ function insertion_sort(bucket) {
             div_update(divs[i], bucket[i], "#07b2ab");
             if (i == (j - 1)) {
                 div_update(divs[i + 1], bucket[i + 1], "yellow");
-            }
-            else {
+            } else {
                 div_update(divs[i + 1], bucket[i + 1], "#07b2ab");
             }
             i -= 1;
         }
         bucket[i + 1] = key;
 
-        for (var t = 0; t < j; t++) {
+        // Update colors for sorted part
+        for (var t = start; t <= j; t++) {
             div_update(divs[t], bucket[t], "green");
         }
     }
-    div_update(divs[j - 1], bucket[j - 1], "green");
+    // Final update for the last element
+    div_update(divs[end - 1], bucket[end - 1], "green");
 }
+

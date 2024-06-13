@@ -1,6 +1,6 @@
 # Sorting_Visualizer
 Just download and run the index file and there you go, you can see 10 sorting visuzlizations, change the array or change the visualization speed for better understanding
-
+or click on this https://dakshesh1234.github.io/Sorting-Visualizer/
 Implemented algorithms:
  1) Bubble sort
  2) Selection sort

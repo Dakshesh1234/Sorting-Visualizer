@@ -16,14 +16,14 @@ function BucketSort() {
 }
 
 function bucket_sort() {
-    var buckets = new Array(array_size);
+    var buckets = new Array(Math.floor(array_size / 4));
     for (var i = 0; i < array_size; i++) {
         buckets[i] = [];
     }
 
 
     for (var i = 0; i < array_size; i++) {
-        var idx_buck = Math.floor(array_size * div_sizes[i] / inp_as.max);
+        var idx_buck = Math.floor(Math.floor(array_size / 4) * div_sizes[i] / inp_as.max);
         buckets[idx_buck].push(div_sizes[i]);
         div_update(divs[i], div_sizes[i], "lightblue");
     }
@@ -37,7 +37,7 @@ function bucket_sort() {
     }
 
     var lent = 0;
-    for (var i = 0; i < array_size; i++) {
+    for (var i = 0; i < Math.floor(array_size / 4); i++) {
         insertion_sort(div_sizes, lent, lent + buckets[i].length);
         lent = lent + buckets[i].length;
     }

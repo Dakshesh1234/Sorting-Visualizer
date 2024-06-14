@@ -22,17 +22,17 @@ Features:
    
 *** Bucket Sort is between the counting Sort and Comparing Sort so for initially all the elements are copied to the bucket and from that it copied back to the original array - lightgreen, after that normal insertion sort performed for each bucket partitions in the original array ***
 
-3) Colored representation of step being executed (For Counting Based Algorithm.
+2) Colored representation of step being executed (For Counting Based Algorithm.
   2.1) rgb(7, 178, 171) : default
   2.2) lightblue: being counted
   2.3) lightgreen: being copied to other array in correct right position
   2.4) green: in correct position (for radix it will be green also when the corresponding digits are in correct position)
 
-4) 3 Controls for visualizations
-  2.1) Speed of visualization (6 speed levels)
-  2.2) Data size ()
-  2.3) Generation of new data (Randomly generate new data).
+3) 3 Controls for visualizations
+   3.1) Speed of visualization (6 speed levels)
+   3.2) Data size ()
+   3.3) Generation of new data (Randomly generate new data).
 
-5) Time and Space complexity of algorithm being visualized.
+4) Time and Space complexity of algorithm being visualized.
 
 

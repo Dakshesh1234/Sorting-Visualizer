@@ -17,7 +17,7 @@ function BucketSort() {
 
 function bucket_sort() {
     var buckets = new Array(Math.floor(array_size / 4));
-    for (var i = 0; i < array_size; i++) {
+    for (var i = 0; i < Math.floor(array_size / 4); i++) {
         buckets[i] = [];
     }
 
@@ -29,7 +29,7 @@ function bucket_sort() {
     }
 
     var k = 0;
-    for (var i = 0; i < array_size; i++) {
+    for (var i = 0; i < Math.floor(array_size / 4); i++) {
         for (var j = 0; j < buckets[i].length; j++) {
             div_sizes[k++] = buckets[i][j];
             div_update(divs[k - 1], div_sizes[k - 1], "lightgreen");

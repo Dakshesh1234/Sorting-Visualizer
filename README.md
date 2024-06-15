@@ -16,9 +16,9 @@ Implemented algorithms:
 Features:
 1) Colored representation of step being executed (For Comparison Based Algorithm).
      1.1) rgb(7, 178, 171):default
-     1.2) Yellow: Being compared
+     1.2) Yellow: Being compared.
      1.3) Red: Identified as in incorrect position and to be moved
-     1.4) Green: In correct position with respect to some partitions.
+     1.4) Green: In correct position with respect to some partitions (in Case of Merge and Quick Sort)
      1.5) Green: In Final Correct Position.
    
 *** Bucket Sort is between the counting Sort and Comparing Sort so for initially all the elements are copied to the bucket and from that it copied back to the original array - lightgreen, after that normal insertion sort performed for each bucket partitions in the original array ***

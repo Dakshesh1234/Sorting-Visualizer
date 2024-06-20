@@ -57,9 +57,6 @@ function insertion_sort(bucket, start, end) {
 
             bucket[i + 1] = bucket[i];
 
-            div_update(divs[i], bucket[i], "red");
-            div_update(divs[i + 1], bucket[i + 1], "red");
-
             div_update(divs[i], bucket[i], "#07b2ab");
             if (i == (j - 1)) {
                 div_update(divs[i + 1], bucket[i + 1], "yellow");

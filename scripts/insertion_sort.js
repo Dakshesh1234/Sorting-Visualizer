@@ -24,9 +24,6 @@ function Insertion()
             div_update(divs[i+1],div_sizes[i+1],"red");
 
             div_sizes[i+1]=div_sizes[i];
-
-            div_update(divs[i],div_sizes[i],"red");
-            div_update(divs[i+1],div_sizes[i+1],"red");
     
             div_update(divs[i],div_sizes[i],"#07b2ab");
             if(i==(j-1))

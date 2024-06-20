@@ -8,8 +8,8 @@
 }
 
 body {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: rgb(74, 74, 74);
+  color: rgb(255, 255, 255);
 }
 
 nav {
@@ -119,7 +119,7 @@ nav .header_right .algos .butt_unselected:hover {
 section {
 /*   background-color: rgb(212, 210, 210); */
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 18% 64% 18%;
 }
 
 section .Complexity_Containers {
@@ -152,6 +152,7 @@ section #array_container {
   width: 100%;
   height: 70vh;
   margin: 15px 0px 0px 0px;
+  margin-top: 10px;
 }
 
 section #Info_Cont2 {

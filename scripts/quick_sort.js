@@ -35,9 +35,6 @@ function quick_partition (start, end)
                 div_sizes[i]=div_sizes[j];
                 div_sizes[j]=temp;
 
-                div_update(divs[i],div_sizes[i],"red");
-                div_update(divs[j],div_sizes[j],"red");
-
                 div_update(divs[i],div_sizes[i],"#07b2ab");
                 div_update(divs[j],div_sizes[j],"#07b2ab");
 

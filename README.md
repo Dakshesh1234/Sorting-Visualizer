@@ -1,6 +1,6 @@
 # Sorting_Visualizer
 Just download and run the index file and there you go, you can see 10 sorting visuzlizations, change the size of array or change the visualization speed for better understanding
-or click on this 
+or click on this link https://dakshesh1234.github.io/Sorting-Visualizer/
 
 
 

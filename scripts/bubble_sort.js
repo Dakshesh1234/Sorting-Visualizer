@@ -25,9 +25,6 @@ function Bubble()
                 var temp=div_sizes[j];
                 div_sizes[j]=div_sizes[j+1];
                 div_sizes[j+1]=temp;
-
-                div_update(divs[j],div_sizes[j], "red");
-                div_update(divs[j+1],div_sizes[j+1], "red");
             }
             div_update(divs[j],div_sizes[j], "#07b2ab");
         }

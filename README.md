@@ -40,7 +40,7 @@ Features:
 4) Time and Space complexity of algorithm being visualized.
 
 Acknowledgement
-I took inspirations from the following sources for some of the segments.
+I took inspirations from the following source for some of the segments.
 
 Sorting Visualizer : https://www.youtube.com/watch?v=pFXYym4Wbkc
 

@@ -1,46 +1,72 @@
-# Sorting_Visualizer
-Just download and run the index file and there you go, you can see 10 sorting visuzlizations, change the size of array or change the visualization speed for better understanding
-or click on this link https://dakshesh1234.github.io/Sorting-Visualizer/
 
 
+# Sorting Visualizer
 
-Implemented algorithms:
- 1) Bubble sort
- 2) Selection sort
- 3) Insertion sort
- 4) Merge sort
- 5) Quick sort
- 6) Heap sort
- 7) Cycle Sort
- 8) Counting Sort
- 9) Bucket Sort
-10) Radix Sort
+Welcome to the Sorting Visualizer! This tool allows you to visualize 10 different sorting algorithms in action. You can adjust the size of the array and the speed of the visualization to gain a deeper understanding of each algorithm.
 
-Features:
-1) Colored representation of step being executed (For Comparison Based Algorithm).
-     1.1) rgb(7, 178, 171):default
-     1.2) Yellow: Being compared.
-     1.3) Red: Identified as in incorrect position and to be moved
-     1.4) Green: In correct position with respect to some partitions (in Case of Merge and Quick Sort)
-     1.5) Green: In Final Correct Position.
-   
-*** Bucket Sort is between the counting Sort and Comparing Sort so for initially all the elements are copied to the bucket and from that it copied back to the original array - lightgreen, after that normal insertion sort performed for each bucket partitions in the original array ***
+You can check out the live demo [here](https://dakshesh1234.github.io/Sorting-Visualizer/).
 
-2) Colored representation of step being executed (For Counting Based Algorithm.
-      2.1) rgb(7, 178, 171) : default
-      2.2) lightblue: being counted
-      2.3) lightgreen: being copied to other array in correct right position
-      2.4) green: in correct position (for radix it will be green also when the corresponding digits are in correct position)
+## Implemented Algorithms
 
-3) 3 Controls for visualizations
-      3.1) Speed of visualization (6 speed levels)
-      3.2) Data size ()
-      3.3) Generation of new data (Randomly generate new data).
+1. **Bubble Sort**
+2. **Selection Sort**
+3. **Insertion Sort**
+4. **Merge Sort**
+5. **Quick Sort**
+6. **Heap Sort**
+7. **Cycle Sort**
+8. **Counting Sort**
+9. **Bucket Sort**
+10. **Radix Sort**
 
-4) Time and Space complexity of algorithm being visualized.
+## Features
 
-Acknowledgement
-I took inspirations from the following source for some of the segments.
+### Colored Representation of Steps
 
-Sorting Visualizer : https://www.youtube.com/watch?v=pFXYym4Wbkc
+- **Comparison-Based Algorithms**:
+  - **rgb(7, 178, 171)**: Default color
+  - **Yellow**: Being compared
+  - **Red**: Identified as in incorrect position and to be moved
+  - **Green**: In correct position with respect to some partitions (in Merge and Quick Sort)
+  - **Green**: In final correct position
+
+- **Counting-Based Algorithms**:
+  - **rgb(7, 178, 171)**: Default color
+  - **Lightblue**: Being counted
+  - **Lightgreen**: Being copied to other array in correct position
+  - **Green**: In correct position (for Radix Sort, it is also green when the corresponding digits are in the correct position)
+
+**Note:** For Bucket Sort, all elements are initially copied to the bucket (`lightgreen`), then copied back to the original array and sorted using insertion sort in the original array.
+
+### Visualization Controls
+
+1. **Speed of Visualization**: 6 speed levels
+2. **Data Size**: Adjustable array size
+3. **New Data Generation**: Randomly generate new data
+
+### Complexity Display
+
+The time and space complexity of the currently visualized algorithm are displayed.
+
+## Acknowledgements
+
+This project was inspired by the [Sorting Visualizer tutorial on YouTube](https://www.youtube.com/watch?v=pFXYym4Wbkc).
+
+## How to Run
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/Sorting-Visualizer.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd Sorting-Visualizer
+   ```
+3. Open the `index.html` file in your browser to start the visualizer.
+
+Alternatively, you can view the visualizer directly online [here](https://dakshesh1234.github.io/Sorting-Visualizer/).
+
+---
+
+Feel free to replace `https://github.com/your-username/Sorting-Visualizer.git` with your actual GitHub repository URL. This README should provide a comprehensive overview of your Sorting Visualizer project, making it easy for others to understand and use.
 

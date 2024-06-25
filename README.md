@@ -68,5 +68,5 @@ Alternatively, you can view the visualizer directly online [here](https://dakshe
 
 ---
 
-Feel free to replace `https://github.com/your-username/Sorting-Visualizer.git` with your actual GitHub repository URL. This README should provide a comprehensive overview of your Sorting Visualizer project, making it easy for others to understand and use.
+Feel free to replace `https://github.com/your-username/Sorting-Visualizer.git` with your actual GitHub repository URL. 
 

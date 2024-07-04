@@ -56,7 +56,7 @@ This project was inspired by the [Sorting Visualizer tutorial on YouTube](https:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/Sorting-Visualizer.git
+   git clone https://github.com/Dakshesh1234/Sorting-Visualizer.git
    ```
 2. Navigate to the project directory:
    ```sh
